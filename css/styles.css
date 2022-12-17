@@ -106,6 +106,12 @@ svg {
     border-bottom: 1px solid #ececec;
 }
 
+.active::after {
+    content: "";
+    border-bottom: 4px solid var(--blue);
+    display: block;
+}
+
 /* EFEKTYWNE ROZWIĄZANIA... */
 .solutions {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bg.jpg);
