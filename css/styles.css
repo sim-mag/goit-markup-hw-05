@@ -96,6 +96,7 @@ svg {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+    position: relative;
 }
 .nav:hover,
 .nav:focus {
@@ -105,11 +106,17 @@ svg {
 .border-nav {
     border-bottom: 1px solid #ececec;
 }
-
 .active::after {
     content: "";
-    border-bottom: 4px solid var(--blue);
+    width: 100%;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 2px;
+    font-size: 0;
     display: block;
+    position: absolute;
+    bottom: -34px;
+    left: 5px;
 }
 
 /* EFEKTYWNE ROZWIĄZANIA... */
@@ -261,7 +268,6 @@ svg {
     fill: var(--icon-grey);
     position: relative;
 }
-
 .box {
     position: relative;
     overflow: hidden;
@@ -380,6 +386,12 @@ svg {
     align-items: flex-start;
     justify-content: space-between;
     margin: 0 -15px;
+}
+.flex-portfolio li {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .flex-portfolio img {
     vertical-align: middle;
