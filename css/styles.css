@@ -91,6 +91,12 @@ svg {
     display: flex;
     gap: 50px;
 }
+.nav {
+    transition-property: color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+}
 .nav:hover,
 .nav:focus {
     color: var(--blue);
@@ -132,6 +138,10 @@ svg {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    transition-property: color, background-color, outline, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .main-button .button {
     color: white;
@@ -173,7 +183,6 @@ svg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 .modal {
     position: absolute;
     top: 50%;
@@ -183,7 +192,6 @@ svg {
     min-height: 581px;
     background-color: white;
 }
-
 .close-btn {
     position: absolute;
     top: 8px;
@@ -195,13 +203,11 @@ svg {
     border-radius: 50%;
     cursor: pointer;
 }
-
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
 }
-
 
 /* SEKCJA TEKSTOWA LOREM */
 .articles {
@@ -288,6 +294,10 @@ svg {
     padding: 12px;
     box-shadow: none;
     padding: 12px;
+    transition-property: background-color, fill, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .flex-icons-contact li:hover,
 .flex-icons-contact li:focus {
@@ -308,6 +318,10 @@ svg {
     gap: 34px;
     justify-content: space-between;
     align-items: center;
+    transition-property: background-color, fill, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .svg-border {
     width: 170px;
@@ -395,6 +409,10 @@ address li {
 .footer-contact {
     color: #ffffff99;
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .join-us {
     padding-top: 12px;
@@ -417,6 +435,10 @@ address li {
     border-radius: 50%;
     padding: 12px;
     background-color: #FFFFFF1A;
+    transition-property: background-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
 }
 .footer-icons-flex li:hover,
 .footer-icons-flex li:focus {
