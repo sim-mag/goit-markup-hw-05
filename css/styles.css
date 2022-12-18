@@ -121,7 +121,8 @@ svg {
 .non-active::after {
     background-color: white;
 }
-.non-active:hover::after {
+.non-active:hover::after,
+.non-active:focus::after {
     background-color: var(--blue);
     transition-property: background-color;
     transition-duration: 250ms;
