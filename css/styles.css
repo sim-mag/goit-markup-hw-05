@@ -118,7 +118,7 @@ svg {
     font-size: 0;
     display: block;
     position: absolute;
-    bottom: -32px;
+    top: 45px;
     left: 5px;
 }
 
@@ -369,7 +369,7 @@ svg {
     gap: 34px;
     justify-content: space-between;
     align-items: center;
-    transition-property: background-color, fill, outline;
+    transition-property: border-color, background-color, fill, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
