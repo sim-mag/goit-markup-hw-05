@@ -5,6 +5,10 @@
     --background-grey: #2f303a;
     --icon-grey: #AFB1B8;
 }
+* {
+    margin: 0;
+    padding: 0;
+  }
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--black);
@@ -383,15 +387,42 @@ svg {
     padding-bottom: 94px;
     gap: 30px;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
     margin: 0 -15px;
 }
-.project {
+.portfolio-item {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
+}
+.project {
+    position: relative;
+    width: 370px;
+    height: 274px;
+    overflow: hidden;
+}
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.description > p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.55;
+    margin-left: 24px;
+    margin-right: 45px;
 }
 .project img {
     vertical-align: middle;
@@ -413,7 +444,10 @@ svg {
     font-weight: 400;
     line-height: 1.875;
 }
-.project:hover {
+.portfolio-item:hover .description {
+    transform: translateY(0);
+}
+.portfolio-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
