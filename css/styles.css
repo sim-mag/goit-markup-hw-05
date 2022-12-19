@@ -106,6 +106,9 @@ svg {
 .border-nav {
     border-bottom: 1px solid #ececec;
 }
+.active {
+    color: var(--blue);
+}
 .active::after,
 .non-active::after {
     content: '';
