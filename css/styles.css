@@ -119,12 +119,12 @@ svg {
     left: 5px;
 }
 .non-active::after {
-    background-color: white;
+    display: none;
 }
 .non-active:hover::after,
 .non-active:focus::after {
-    background-color: var(--blue);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
 /* EFEKTYWNE ROZWIĄZANIA... */
