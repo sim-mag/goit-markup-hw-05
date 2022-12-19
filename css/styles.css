@@ -124,9 +124,7 @@ svg {
 .non-active:hover::after,
 .non-active:focus::after {
     background-color: var(--blue);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* EFEKTYWNE ROZWIĄZANIA... */
@@ -217,9 +215,7 @@ svg {
     border-radius: 14px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%) scale(1);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(.33,.47,.21,.67);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn {
     position: absolute;
@@ -406,9 +402,7 @@ svg {
     margin: 0 -15px;
 }
 .portfolio-item {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project {
     position: relative;
@@ -426,9 +420,7 @@ svg {
     align-items: center;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .description p {
     color: white;
@@ -444,7 +436,7 @@ svg {
 }
 .project-name {
     padding: 20px 24px 20px 24px;
-    border: 2px solid #eeeeee;
+    border: 1px solid #eeeeee;
     border-top: none;
 }
 .project-name h3 {
@@ -505,9 +497,7 @@ address li {
 .footer-contact {
     color: #ffffff99;
     text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-us {
     padding-top: 12px;
